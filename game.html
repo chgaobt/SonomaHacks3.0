@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="This is a silly, stress-relieving game">
+<title>Yummy Cake</title>
+</head>
+
+<body>
+
+		<p id="cake">&emsp; ___|_|_|_|_|_|___<br>
+     &emsp;|  *   *   *   *   *   *   *   *  *|<br>
+     &emsp;|~~~~~~~~~~~~ |<br>
+  &ensp;_|_____________ |_<br>
+|   *   *   *   *   *   *   *   *   *   *   *    |<br>                                
+|~.~.~.~.~.~.~.~.~.~.~|<br>
+| ________________ |
+		</p>
+      	 
+		<button onclick="changeText()">Eat!</button>
+
+		<script>
+			var click = 1; 
+            var p1 = document.getElementById("cake");
+            function changeText () {
+            	if (click === 0){
+            		click = 1;
+            		p1.innerHTML = "&emsp;"+" ___|_|_|_|_|_|___"+"<br>"+"&emsp;"+
+       "|  *   *   *   *   *   *   *   *  *|"+"<br>"+"&emsp;"+
+       "|~~~~~~~~~~~~ |"+"<br>"+"&ensp;"+
+       "_|_____________ |_"+"<br>"+
+       "|   *   *   *   *   *   *   *   *   *   *   *    |"+"<br>"+
+       "|~.~.~.~.~.~.~.~.~.~.~|"+"<br>"+
+       "| ________________ |";
+            	}
+            	else if(click === 1){
+            		click = 2; 
+            		p1.innerHTML = "&emsp;"+" __|_|_|_|_"+"<br>"+"&emsp;"+
+       "|  *   *   *   *   *   |_____"+"<br>"+"&emsp;"+
+       "|~~~~~~~~~~~~ |"+"<br>"+"&ensp;"+
+       "_|_____________ |_"+"<br>"+
+       "|   *   *   *   *   *   *   *   *   *   *   *    |"+"<br>"+
+       "|~.~.~.~.~.~.~.~.~.~.~|"+"<br>"+
+       "| ________________ |";
+
+            	}
+            	else if(click === 2){
+            		click = 3; 
+            		p1.innerHTML = "&emsp;"+" __|_|_|_|_"+"<br>"+"&emsp;"+
+       "|  *   *   *   *   *   |"+"<br>"+"&emsp;"+
+       "|~~~~~~~ |_____"+"<br>"+"&ensp;"+
+       "_|_____________ |_"+"<br>"+
+       "|   *   *   *   *   *   *   *   *   *   *   *    |"+"<br>"+
+       "|~.~.~.~.~.~.~.~.~.~.~|"+"<br>"+
+       "| ________________ |";
+            	}
+            	else if(click === 3){
+            		click = 4; 
+            		p1.innerHTML = "&emsp;"+" __|_|_"+"<br>"+"&emsp;"+
+       "|  *   *   *   |___"+"<br>"+"&emsp;"+
+       "|~~~~~~~ |_____"+"<br>"+"&ensp;"+
+       "_|_____________ |_"+"<br>"+
+       "|   *   *   *   *   *   *   *   *   *   *   *    |"+"<br>"+
+       "|~.~.~.~.~.~.~.~.~.~.~|"+"<br>"+
+       "| ________________ |";
+            	}
+            	else if(click === 4){
+            		click = 5; 
+            		p1.innerHTML = "&emsp;"+" __|_|_"+"<br>"+"&emsp;"+
+       "|  *   *   *   |"+"<br>"+"&emsp;"+
+       "|~~~~  |________"+"<br>"+"&ensp;"+
+       "_|_____________ |_"+"<br>"+
+       "|   *   *   *   *   *   *   *   *   *   *   *    |"+"<br>"+
+       "|~.~.~.~.~.~.~.~.~.~.~|"+"<br>"+
+       "| ________________ |";
+            	}
+            	else if(click === 5){
+            		click = 6; 
+            		p1.innerHTML = "&emsp;"+""+"<br>"+"&emsp;"+
+       "_____"+"<br>"+"&emsp;"+
+       "|~~~~  |________"+"<br>"+"&ensp;"+
+       "_|_____________ |_"+"<br>"+
+       "|   *   *   *   *   *   *   *   *   *   *   *    |"+"<br>"+
+       "|~.~.~.~.~.~.~.~.~.~.~|"+"<br>"+
+       "| ________________ |";
+            	}
+            	else if(click === 6){
+            		click = 7; 
+            		p1.innerHTML = "&emsp;"+""+"<br>"+"&emsp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+
+       "________"+"<br>"+"&ensp;"+
+       "______|________ |_"+"<br>"+
+       "|   *   *   *   *   *   *   *   *   *   *   *    |"+"<br>"+
+       "|~.~.~.~.~.~.~.~.~.~.~|"+"<br>"+
+       "| ________________ |";
+            	}
+            	else if(click === 7){
+            		click = 8; 
+            		p1.innerHTML = "&emsp;"+""+"<br>"+"&emsp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+
+       "________"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "__|________ |_"+"<br>"+
+       "____ |   *   *   *   *   *   *   *   *    |"+"<br>"+
+       "|~.~.~.~.~.~.~.~.~.~.~|"+"<br>"+
+       "| ________________ |";
+            	}
+            	else if(click === 8){
+            		click = 9; 
+            		p1.innerHTML = "&emsp;"+""+"<br>"+"&emsp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "___"+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "__|__ |_"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "_____|*   *   *   *   *|"+"<br>"+"&ensp;"+
+       "____|~.~.~.~.~.~.~.~|"+"<br>"+
+       "|_________________|";
+            	}
+            	else if(click === 9){
+            		click = 10; 
+            		p1.innerHTML = "&emsp;"+""+"<br>"+"&emsp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "___"+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "__|__ |_"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "_____|*   *   *   *   *|"+"<br>"+"&ensp;"+"&emsp;"+"&emsp;"+
+       "|~.~.~.~.~.~.~.~|"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "|____________|";
+            	}
+            	else if(click === 10){
+            		click = 11; 
+            		p1.innerHTML = "&emsp;"+""+"<br>"+"&emsp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "___"+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "__|__ |_"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "|*   *   *   *   *|"+"<br>"+"&ensp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "|~~.~.~.~|"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "|_______|";
+            	}
+            	else if(click === 11){
+            		click = 12; 
+            		p1.innerHTML = "&emsp;"+""+"<br>"+"&emsp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+
+       "_____"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "___|*   *   *|"+"<br>"+"&ensp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "|~~.~.~.~|"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "|_______|";
+            	}
+            	else if(click === 12){
+            		click = 13; 
+            		p1.innerHTML = "&emsp;"+""+"<br>"+"&emsp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+
+       "__"+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+
+       "__|*|"+"<br>"+"&ensp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&ensp;"+
+       "|~~~-|"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&ensp;"+
+       "|____|";
+            	}
+            	else if(click === 13){
+            		click = 14; 
+            		p1.innerHTML = "&emsp;"+""+"<br>"+"&emsp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+
+       ""+"<br>"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+
+       "__"+"<br>"+"&ensp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&emsp;"+
+       "_| ~|"+"<br>"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&emsp;"+"&ensp;"+"&emsp;"+"&emsp;"+
+       "|__ |";
+            	}
+            	else if(click === 14){
+            		click = 0; 
+            		p1.innerHTML = "YUM!";
+            	}
+            }
+      	</script>
+
+	</body>
+</html>
